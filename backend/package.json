@@ -1,0 +1,19 @@
+{
+  "name": "typeahead-backend",
+  "version": "1.0.0",
+  "description": "Search typeahead backend: Trie store, distributed cache (consistent hashing), trending, batch writes",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "generate": "node scripts/generateDataset.js",
+    "bench": "node scripts/benchmark.js",
+    "demo:recency": "node scripts/demoRecency.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}
